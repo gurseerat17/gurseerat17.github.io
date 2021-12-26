@@ -36,30 +36,35 @@
             <div class="w-container">
                 <div class="photo-row w-row">
                     <div>
-                        <h1 class="photo-page-title">Tic tac toe</h1>
-                        <div class="photo-info-text">October, 2019</div>
-                        <div class="description-text w-richtext w-col w-col-6">
-                            <p align="justify">
-                                Tic-tac-toe (noughts and crosses) or X and O is a​ classic ​game for two players, ​X​ and ​O​, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.<br> 
-                                <br>The game has been designed to play using FPGA switches to enter the position where the player wants to enter an X (01 in the programme) or O(10 in the programme) . The switches take four bit input. For example, if the first and last switch is on, the middle two are off, the position being entered is 9 ( 1 0 0 1 )<br>
-                                <br>The result is either a draw (all LEDs of both colours light up ) or if the Computer(Red) or the Player(Green) wins, it is depicted by lighting up of all LEDs of the corresponding colour on the breadboard and the corresponding LED of the FPGA (last LED for the Computer and second last for the Player).<br>
-                                
-                                <br>
-                                <a href="https://github.com/gurseerat17/TicTacToe" target="__blank"><u>Github Link</u></a>
+                        <h1 class="photo-page-title">Image captioning for the blind </h1>
+                        <div class="photo-info-text">April, 2020 - June, 2020</div>
+                        <div class="description-text w-richtext w-col w-col-7">
+                            <p align="justify" style="padding-right: 3%;">
+                                Tested a novel facial expression recognition method, as presented by IEEE, on facial images with unconstrained  poses and illumination from the FERC 2013 Dataset. An expectation– maximization algorithm is developed to reliably estimate the emotion labels.<br>
+                                <br>To address the recognition of multi-modal ‘wild’  expressions, a new Deep Locality-Preserving Convolutional Neural Network (DLP-CNN) has been used to enhance the discriminative power of deep features by preserving the locality closeness while maximizing the inter-class scatter. A comparison has been made with the lab-constrained images from the CK+ Dataset.<br>
+                                <br>Achieved a training accuracy of 66.3% on the FER-2013 Dataset and 72% on CK+ Dataset(unconstrained emotion data) after training for 20 epochs.<br>
+                                <br>Observations:<ul>
+                                    <li>Tthe model trained on the FER13 dataset is more receptive to not explicitly vivid expressions. This is well explained by the fact that, CK+ itself, has posed emotions, which are comparatively vivid and unambiguous. However, FER13 being more diverse, the accuracy of this model on “wild” emotions is distinctly higher.
+                                    </li>
+                                </ul>
+                                <br>References:<ul align="justify" style="padding-right: 3%;">
+                                    <li><a href="https://ieeexplore.ieee.org/document/8453893"  target="__blank" >Reliable Crowdsourcing and Deep Locality-Preserving Learning for Unconstrained Facial Expression Recognition</a></li>
+                                    <li><a href="https://paperswithcode.com/paper/multi-view-dynamic-facial-action-unit"  target="__blank" >Multi-View Dynamic Facial Action Unit Detection</a></li>
+                                    <li><a href="https://github.com/ShawDa/facial-expression-recognition"  target="__blank" >Facial Expression Recognition</a></li>
+                                </ul>
                             </p>
                         </div>
-                        <div class="w-col w-col-1">
-                        </div>
-                        <div class="w-col w-col-4">
+                        <div class="w-col w-col-5">
                             <div class="w-richtext">
                                 <figure data-rt-type="image" data-rt-align="fullwidth" data-rt-max-width="100" class="w-richtext-align-fullwidth" data-rt-max-height="56.25" style="max-width: 100%;">
                                     <div>
-                                        <img src="../assets/videos/projects/ticTacToe/demo.gif">
+                                        <img src="../assets/images/projects/emotion-recognition/results.png">
+                                    </div>
+                                    <div>
+                                        <p align="center" style="color: #000; padding-top: 2%;"><i>Some Results</i></p>
                                     </div>
                                 </figure>
                             </div>
-                        </div>
-                        <div class="w-col w-col-1">
                         </div>
                     </div>
                 </div>
