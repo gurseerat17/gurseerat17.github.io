@@ -28,11 +28,18 @@
                     <a href="https://drive.google.com/file/d/1gMrdQ8cVqVV2YEuD6u_i9oYHvWiICfXs/view?usp=sharing"  target="__blank" class="navigation-link w-nav-link" style="max-width: 728px;">Resume</a>
                     <a href="blog.html" class="navigation-link w-nav-link" style="max-width: 728px;">Experience</a>
                 </nav>
-                <div class="hamburger-button w-nav-button" style="-webkit-user-select: text;" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
+                <div class="hamburger-button w-nav-button" id="hamburger-button-0" style="-webkit-user-select: text;" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false" onclick="showMenu()">
                     <div class="w-icon-nav-menu"></div>
                 </div>
             </div>
-            <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+            <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0" style="height: 567.6px; display: none; ">
+                <nav role="navigation" class="navigation-menu w-nav-menu" style="transform: translateY(0px) translateX(0px); transition: transform 400ms ease 0s;" data-nav-menu-open="">
+                    <a href="index.html" class="navigation-link w-nav-link w--nav-link-open" style="max-width: 728px;">Projects</a>
+                    <a href="about.html" aria-current="page" class="navigation-link w-nav-link w--nav-link-open" style="max-width: 728px; color: silver;">About</a>
+                    <a href="https://drive.google.com/file/d/1gMrdQ8cVqVV2YEuD6u_i9oYHvWiICfXs/view?usp=sharing" target="__blank"  class="navigation-link w-nav-link w--nav-link-open" style="max-width: 728px;">Resume</a>
+                    <a href="blog.html" class="navigation-link w-nav-link w--nav-link-open" style="max-width: 728px;">Experience</a>
+                </nav>
+            </div>
         </div>
         <div class="section">
             <div class="w-container">
@@ -68,5 +75,19 @@
             </div>
         </div>
     </body>
-    <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
-</html>
+<script>
+        function showMenu() {
+          var hamburgerButton = document.getElementById("hamburger-button-0");
+          var menu = document.getElementById("w-nav-overlay-0");
+          if (hamburgerButton.getAttribute("aria-expanded") == "false") {
+            hamburgerButton.className += " w--open";
+            hamburgerButton.setAttribute("aria-expanded", "true")
+            menu.style.display = "block";
+          } else {
+            hamburgerButton.setAttribute("aria-expanded", "false")
+            hamburgerButton.classList.remove("w--open");
+            menu.style.display = "none";
+          }
+        }
+    </script>
+    <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
